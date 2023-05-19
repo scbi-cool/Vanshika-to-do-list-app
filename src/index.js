@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Todo from './Todo';
 import NoPage from './NoPage';
+import DumbNameFormExample from './DumbNameFormExample'; 
+import Test from './Test';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import TodoList from './TodoList'
@@ -13,6 +15,8 @@ function App() {
        <Routes>
            <Route index element={<HomeContent />} />
            <Route path="todo" element={<Todo />} />
+           <Route path="nameform" element={<DumbNameFormExample />} />
+           <Route path="test" element={<Test />} />
            {/* <Route path="excercise1" element={<Excercise1 />} /> */}
            <Route path="*" element={<NoPage />} />
        </Routes>
@@ -34,6 +38,8 @@ function LearningList() {
    <>
      <a href = "/">Home</a>
      <a href="todo">Lession1</a>
+     <a href="nameform"> Name Form </a>
+     <a href="test"> Test </a>  
      <hr />
    </>
  )
